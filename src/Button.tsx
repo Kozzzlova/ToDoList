@@ -10,9 +10,20 @@
 import { MouseEvent } from 'react';
 
 import { ButtonHTMLAttributes } from 'react';
+type ButtonProps = {
+   title: string;
+   onClick: () => void;
+   className?: string;
+};
 
-export const Button = ({ title }: ButtonHTMLAttributes<HTMLButtonElement>) => {
-   return <button>{title}</button>;
+export const Button = ({ title, onClick, className }: ButtonProps) => {
+   return (
+      <button
+         className={className}
+         onClick={onClick}>
+         {title}
+      </button>
+   );
 };
 
 // type ButtonProps = {
