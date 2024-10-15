@@ -7,9 +7,7 @@
 //    return <button type='reset'>{title}</button>;
 // };
 
-import { MouseEvent } from 'react';
 
-import { ButtonHTMLAttributes } from 'react';
 type ButtonProps = {
    title: string;
    onClick: () => void;
